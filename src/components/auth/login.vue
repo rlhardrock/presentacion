@@ -1,14 +1,12 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
+      <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1" >
         <form
-          class="text-center border border-primary p-5"
-          style="margin-top: 70px; height: auto; padding-top: 100px !important"
-          @submit.prevent="loginUser">
-          <h1 class="h3 mb-3 font-weight-normal" style="textalign: center">
-            Iniciar Sesión
-          </h1>
+          class="text-center p-5"
+          style="margin: 0px; height: auto; padding-top: 50px !important"
+          >
+          
 
           <div class="col-auto">
                 
@@ -85,3 +83,4 @@ export default {
   },
 };
 </script>
+

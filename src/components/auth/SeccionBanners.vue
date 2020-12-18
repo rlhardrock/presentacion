@@ -4,15 +4,15 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"> -->
         <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="active"></li>
         </ol>
        
-        <div class="carousel-inner">
+        <div class="carousel-inner"  slideshow="10000">
             <div class="carousel-item active">
                 <img src="@/assets/neonlights/neon01.jpg"  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  height="550">
 

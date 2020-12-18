@@ -18,6 +18,12 @@ const routes = [{
   component: () =>
   import ("../views/Login.vue")
   },
+  {
+    path: "/",
+    name: "about",
+    component: () =>
+    import ("../views/About.vue")
+    },
 ];
 const router = new VueRouter({
  mode: "history",

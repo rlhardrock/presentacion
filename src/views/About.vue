@@ -1,5 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <!-- <seccion-tarjetas/> -->
   </div>
 </template>
+
+<script>
+/* import SeccionTarjetas from '../components/SeccionTarjetas.vue' */
+export default {
+  /* name: 'About',
+	components: { SeccionTarjetas }, */
+
+}
+</script>
+
+<style>
+
+</style>
