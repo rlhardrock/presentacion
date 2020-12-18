@@ -5,41 +5,38 @@
         <form
           class="text-center border border-primary p-5"
           style="margin-top: 70px; height: auto; padding-top: 100px !important"
-          @submit.prevent="loginUser"
-        >
+          @submit.prevent="loginUser">
           <h1 class="h3 mb-3 font-weight-normal" style="textalign: center">
             Iniciar Sesión
           </h1>
 
-          <!-- nombre -->
-           <input
-            type="text"
-            id="nombre"
-            class="form-control mb-5"
-            placeholder="Nombre"
-            v-model="login.nombre"
-          />
-          <!-- email -->
-          <input
-            type="text"
-            id="email"
-            class="form-control mb-5"
-            placeholder="Email"
-            v-model="login.email"
-          />
-          <!-- Password -->
-          <input
-            type="password"
-            id="password"
-            class="form-control mb-5"
-            placeholder="Contraseña"
-            v-model="login.password"
-          />
-          <!-- inicio sesion button -->
+          <div class="col-auto">
+                
+                <input 
+                v-model="login.email"
+                type="text" 
+                class="form-control" 
+                id="staticEmail2" 
+                placeholder="email">
+          </div>
+         <br>
+          <div class="col-auto">
+                
+                <input 
+                v-model="login.password"
+                type="password" 
+                class="form-control" 
+                id="inputPassword2" 
+                placeholder="password">
+            </div>
+          <br>
           <center>
-            <button class="btn btn-primary btn-block w-75 my4" type="submit">
-              Inicio de sesion
-            </button>
+            <div class="col-auto">
+                <button
+                @click.prevent="loginUser"
+                type="submit" 
+                class="btn btn-success mb-3">Authenticate</button>
+            </div>
           </center>
         </form>
       </div>
@@ -47,7 +44,7 @@
   </div>
 </template>
 <script>
-import swal from "sweetalert2";
+import Swal from "sweetalert2";
 export default {
   data() {
     return {
@@ -72,11 +69,12 @@ export default {
                         timer: 1500,
                         backdrop: `rgba(0,250,0,0.6)`
                         });
+                        this.$router.push('/home');
         }
       } catch (err) {
                 Swal.fire({
                 icon: 'error',
-                title: 'Datos Incorrectos!  Reintentalo !',
+                title: 'Datos Incorrectos! Reintentalo!',
                 width: 600,
                 padding: '3em',
                 timer: 2500,
